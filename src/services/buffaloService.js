@@ -9,6 +9,6 @@ export async function getAllBuffalos() {
     return buffaloArray;
   } catch (error) {
     console.error("❌ Erro no getAllBuffalos:", error);
-    return [];
+    throw error;
   }
 }
